@@ -1,0 +1,15 @@
+Log message source details sources=["/opt/airflow/logs/dag_id=marketvol/run_id=manual__2026-03-20T22:43:03.171737+00:00/task_id=run_query/attempt=1.log"]
+[2026-03-20 18:43:11] INFO - Stats instance was created in PID 8 but accessed in PID 402. Re-initializing.
+[2026-03-20 18:43:11] INFO - DAG bundles loaded: dags-folder, example_dags
+[2026-03-20 18:43:11] INFO - Filling up the DagBag from /opt/airflow/dags/marketvol_dag.py
+[2026-03-20 18:43:12] WARNING - The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`. category=DeprecatedImportWarning
+[2026-03-20 18:43:12] WARNING - The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`. category=DeprecatedImportWarning
+[2026-03-20 18:43:12] INFO - Task instance is in running state
+[2026-03-20 18:43:12] INFO -  Previous state of the Task instance: TaskInstanceState.QUEUED
+[2026-03-20 18:43:12] INFO - Current task name:run_query
+[2026-03-20 18:43:12] INFO - Dag name:marketvol
+[2026-03-20 18:43:12] INFO - Analysis complete for 2026-03-20. AAPL rows: 392, TSLA rows: 392
+[2026-03-20 18:43:12] INFO - Done. Returned value was: None
+[2026-03-20 18:43:12] INFO - Task instance in success state
+[2026-03-20 18:43:12] INFO -  Previous state of the Task instance: TaskInstanceState.RUNNING
+[2026-03-20 18:43:12] INFO - Task operator:<Task(PythonOperator): run_query>

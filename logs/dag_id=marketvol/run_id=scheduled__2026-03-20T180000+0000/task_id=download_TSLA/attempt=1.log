@@ -1,0 +1,15 @@
+{"timestamp":"2026-03-20T22:42:19.153212Z","level":"info","event":"Stats instance was created in PID 8 but accessed in PID 350. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-20T22:42:19.634460Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-20T22:42:19.637102Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/marketvol_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-20T22:42:20.321534Z","level":"warning","event":"The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/marketvol_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-20T22:42:20.321759Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/marketvol_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-03-20T22:42:20.368054Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:20.368749Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:20.369592Z","level":"info","event":"Current task name:download_TSLA","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:20.370171Z","level":"info","event":"Dag name:marketvol","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:21.180599Z","level":"error","event":"\r[*********************100%***********************]  1 of 1 completed","logger":"task.stderr"}
+{"timestamp":"2026-03-20T22:42:21.218598Z","level":"info","event":"Downloaded TSLA data to /tmp/TSLA_raw.csv","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:21.219117Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-20T22:42:21.246894Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:21.247519Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:42:21.248430Z","level":"info","event":"Task operator:<Task(PythonOperator): download_TSLA>","logger":"task.stdout"}

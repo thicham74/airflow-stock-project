@@ -1,0 +1,15 @@
+{"timestamp":"2026-03-20T22:43:06.486372Z","level":"info","event":"Stats instance was created in PID 8 but accessed in PID 380. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-20T22:43:06.981679Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-20T22:43:06.984313Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/marketvol_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-20T22:43:07.691972Z","level":"warning","event":"The `airflow.operators.bash.BashOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.bash.BashOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/marketvol_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-20T22:43:07.692217Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/marketvol_dag.py","lineno":3,"logger":"py.warnings"}
+{"timestamp":"2026-03-20T22:43:07.739223Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:07.739746Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:07.740153Z","level":"info","event":"Current task name:download_AAPL","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:07.740503Z","level":"info","event":"Dag name:marketvol","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:08.284568Z","level":"error","event":"\r[*********************100%***********************]  1 of 1 completed","logger":"task.stderr"}
+{"timestamp":"2026-03-20T22:43:08.303463Z","level":"info","event":"Downloaded AAPL data to /tmp/AAPL_raw.csv","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:08.304098Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-20T22:43:08.328851Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:08.329605Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-20T22:43:08.330500Z","level":"info","event":"Task operator:<Task(PythonOperator): download_AAPL>","logger":"task.stdout"}
