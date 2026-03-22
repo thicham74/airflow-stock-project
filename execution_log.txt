@@ -13,3 +13,7 @@ Log message source details sources=["/opt/airflow/logs/dag_id=marketvol/run_id=m
 [2026-03-20 18:43:12] INFO - Task instance in success state
 [2026-03-20 18:43:12] INFO -  Previous state of the Task instance: TaskInstanceState.RUNNING
 [2026-03-20 18:43:12] INFO - Task operator:<Task(PythonOperator): run_query>
+
+T_Hic@Hanane_Tam MINGW64 ~/airflow-stock-project (main)
+$ docker compose exec airflow-worker python //opt/airflow/dags/log_analyzer.py //opt/airflow/logs/dag_id=marketvol
+Total number of errors: 0

@@ -21,3 +21,9 @@ This project uses Apache Airflow to orchestrate a data pipeline that extracts st
 ## How to Verify Results
 Run the following command in Git Bash to see the generated CSV files:
 `docker compose exec airflow-worker ls -R //tmp/data/`
+
+## Log Analyzer (Project 2)
+The log analyzer scans the Airflow worker's internal log directory to report error counts and details.
+
+**To run the analyzer:**
+`docker compose exec airflow-worker python //opt/airflow/dags/log_analyzer.py //opt/airflow/logs/dag_id=marketvol`
